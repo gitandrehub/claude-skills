@@ -6,6 +6,8 @@ Skill personali per Claude Code.
 |---|---|
 | [`explain-code`](skills/explain-code/SKILL.md) | Legge una cartella o un progetto e scrive una guida semplice, step by step, che segue il flusso dall'ingresso all'uscita, con limiti e spunti di miglioramento. |
 | [`explain-code-documentation`](skills/explain-code-documentation/SKILL.md) | Stessa guida di `explain-code` ma come pura documentazione: descrive solo il comportamento del codice, senza limiti, punti da verificare né miglioramenti. Richiede anche `explain-code` installata. |
+| [`check-comments`](skills/check-comments/SKILL.md) | Controlla che commenti e docstring corrispondano al codice e scrive un report `.md` con tutte le non corrispondenze e una correzione proposta per ciascuna. Non modifica il codice. |
+| [`fix-comments`](skills/fix-comments/SKILL.md) | Applica il report di `check-comments`: riscrive solo i commenti selezionati, mai il codice. Richiede anche `check-comments` installata. |
 
 ## Installazione
 
