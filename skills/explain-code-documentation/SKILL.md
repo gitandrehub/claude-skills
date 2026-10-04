@@ -1,6 +1,6 @@
 ---
 name: explain-code-documentation
-description: Variante di explain-code che scrive la stessa guida semplice e step by step di una cartella o di un progetto, ma come pura documentazione: descrive cosa fa oggi il codice e i suoi vincoli, senza proporre miglioramenti né modifiche. Use when the user wants documentation of a folder, project, module or flow without suggestions ("documenta", "scrivi la documentazione", "senza migliorie", "solo cosa fa"), or invokes /explain-code-documentation.
+description: Variante di explain-code che scrive la stessa guida semplice e step by step di una cartella o di un progetto, ma come pura documentazione: descrive solo cosa fa oggi il codice, senza limiti, punti da verificare né proposte di miglioramento. Use when the user wants documentation of a folder, project, module or flow without suggestions ("documenta", "scrivi la documentazione", "senza migliorie", "solo cosa fa"), or invokes /explain-code-documentation.
 argument-hint: "<cartella> [focus: flusso o domanda specifica]"
 ---
 
@@ -33,25 +33,25 @@ Se quella cartella non esiste, fermati e di' all'utente che va installata anche
 
 Queste regole prevalgono su quelle di `explain-code`:
 
-1. **Niente proposte.** Ometti le sezioni "Spunti di miglioramento" e "Metodo pratico per
-   decidere cosa cambiare". In nessun punto del documento scrivere cosa si dovrebbe,
-   potrebbe o converrebbe cambiare, aggiungere o sostituire.
-2. **I limiti diventano vincoli di comportamento.** La sezione "Limiti attuali" si chiama
-   "Vincoli e comportamenti da conoscere" ed elenca fatti verificabili, divisi per stadio,
-   senza giudizi né rimedi.
-   - Sì: "Ogni cella produce al massimo un bersaglio: due oggetti nella stessa cella
-     vengono riportati come uno."
-   - No: "Ogni cella produce un solo bersaglio, il che è un limite: andrebbe esteso a due."
+1. **Niente proposte né limiti.** Ometti le sezioni "Limiti attuali", "Spunti di
+   miglioramento" e "Metodo pratico per decidere cosa cambiare". In nessun punto del
+   documento scrivere cosa si dovrebbe, potrebbe o converrebbe cambiare, né elenchi di
+   limiti o punti deboli. Le frasi "Una conseguenza importante è..." restano solo se
+   spiegano come si comporta il sistema, non se lo giudicano.
+2. **Niente "Punto da verificare".** Se codice e documentazione esistente si contraddicono,
+   nel documento descrivi solo ciò che fa il codice. Segnala la contraddizione
+   esclusivamente nella risposta in chat, in una riga.
 3. **Tono neutro.** Evita parole valutative ("debole", "fragile", "problema", "purtroppo",
-   "migliorabile"). Descrivi la conseguenza e lascia la valutazione al lettore.
-4. **"Punto da verificare" resta**, ma solo per contraddizioni fra codice e documentazione,
-   formulato come domanda aperta, non come correzione.
-5. **Apertura.** Il paragrafo iniziale dice cosa documenta la guida e per chi è utile
+   "migliorabile", "limite"). Descrivi il comportamento e lascia la valutazione al lettore.
+4. **Apertura.** Il paragrafo iniziale dice cosa documenta la guida e per chi è utile
    (uso, manutenzione, onboarding), non "dove intervenire".
-6. **Risposta in chat:** percorso del file e flusso in 3-5 righe. Niente elenco di limiti.
+5. **Risposta in chat:** percorso del file, flusso in 3-5 righe ed eventuali
+   contraddizioni con la documentazione esistente. Niente elenco di limiti.
+6. **Checklist di STYLE.md:** ignora le voci su "Punto da verificare" e su limiti e
+   miglioramenti divisi per stadio.
 
 ## Autocontrollo aggiuntivo
 
 - [ ] Cercando nel documento "dovrebbe", "potrebbe", "converrebbe", "migliorare",
-      "proposta", "suggerimento", "limite" non resta nessuna proposta.
-- [ ] Ogni vincolo descritto è un fatto con la sua conseguenza, non un giudizio.
+      "proposta", "suggerimento", "limite", "da verificare" non resta nulla di valutativo.
+- [ ] Non ci sono sezioni di limiti, vincoli, miglioramenti o punti da verificare.
