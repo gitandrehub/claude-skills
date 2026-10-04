@@ -5,6 +5,7 @@ Skill personali per Claude Code.
 | Skill | Cosa fa |
 |---|---|
 | [`explain-code`](skills/explain-code/SKILL.md) | Legge una cartella o un progetto e scrive una guida semplice, step by step, che segue il flusso dall'ingresso all'uscita, con limiti e spunti di miglioramento. |
+| [`explain-code-documentation`](skills/explain-code-documentation/SKILL.md) | Stessa guida di `explain-code` ma come pura documentazione: descrive comportamento e vincoli, senza proporre miglioramenti. Richiede anche `explain-code` installata. |
 
 ## Installazione
 

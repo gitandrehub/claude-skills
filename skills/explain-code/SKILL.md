@@ -1,6 +1,6 @@
 ---
 name: explain-code
-description: Legge una cartella o un progetto e scrive una guida semplice, step by step, che segue il flusso (dato, richiesta, evento, azione utente) dall'ingresso all'uscita e spiega cosa fa oggi il codice, dove può rompersi e cosa si potrebbe migliorare. Use when the user asks to explain, read, summarize or walk through a folder, project, module or pipeline ("spiegami cosa fa", "leggi il codice e fammi un riassunto", "guida semplice", "step by step"), or invokes /explain-code.
+description: Legge una cartella o un progetto e scrive una guida semplice, step by step, che segue il flusso (dato, richiesta, evento, azione utente) dall'ingresso all'uscita e spiega cosa fa oggi il codice, dove può rompersi e cosa si potrebbe migliorare. Use when the user asks to explain, read, summarize or walk through a folder, project, module or pipeline ("spiegami cosa fa", "leggi il codice e fammi un riassunto", "guida semplice", "step by step"), or invokes /explain-code. For pure documentation without improvement suggestions, use explain-code-documentation instead.
 argument-hint: "<cartella> [focus: flusso o domanda specifica]"
 ---
 
